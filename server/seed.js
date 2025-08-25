@@ -55,7 +55,7 @@ async function seed() {
   });
   await PlasticType.deleteMany({}); // optional: clean old data
   await PlasticType.insertMany(types);
-  console.log("✅ All plastic types seeded!");
+  console.log("All plastic types seeded!");
   mongoose.disconnect();
 }
 

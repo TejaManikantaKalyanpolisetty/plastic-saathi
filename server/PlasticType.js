@@ -7,6 +7,8 @@ const PlasticTypeSchema = new mongoose.Schema({
   code: String,
   description: String,
   examples: String,
+  keywords: [String],               // <-- add this
+  updatedAt: { type: Date, default: Date.now }
   // Add more fields as you want
 });
 
