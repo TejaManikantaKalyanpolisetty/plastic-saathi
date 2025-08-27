@@ -1,0 +1,18 @@
+/* src/mobile.css */
+
+/* smoother taps on mobile */
+html, body { height: 100%; -webkit-tap-highlight-color: transparent; }
+
+/* prevent sideways scroll on small screens */
+body { overflow-x: hidden; }
+
+/* avoid iOS auto-zoom when focusing inputs */
+input, select, textarea, button { font-size: 16px; }
+
+/* comfortable tap targets on touch devices */
+@media (pointer: coarse) {
+  a, button, .btn { min-height: 44px; }
+}
+
+/* optional utility: full viewport height without address-bar jump */
+.h-screen-mobile { min-height: 100dvh; }
