@@ -166,7 +166,7 @@ app.use(cors({
 }));
 
 // Preflight support
-app.options('*', cors());
+//app.options('*', cors());
 
 app.use(express.json({ limit: '1mb' }));
 
